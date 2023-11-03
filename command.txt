@@ -1,0 +1,8 @@
+datafile = 'data_set.dat'
+stats datafile nooutput
+plot for [IDX=0:STATS_blocks-1] \
+    datafile \
+    index IDX \
+    using 1:2 \
+    with lines \
+    title columnheader(1)
